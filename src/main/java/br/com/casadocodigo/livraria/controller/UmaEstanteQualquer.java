@@ -29,4 +29,10 @@ public class UmaEstanteQualquer implements Estante {
 		return Arrays.asList(vraptor, arquitetura);
 	}
 
+	@Override
+	public Livro buscaPorIsbn(String isbn) {
+		
+		return todosOsLivros().get(0);
+	}
+
 }

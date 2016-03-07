@@ -8,25 +8,30 @@
 	<body>
 		<form action="${linkTo[LivrosController].salva }" method="post">
 			<h2>Formulario de cadastro de livros</h2>
+			<input type="hidden" name = "livro.id" value="{livro.id	}"/> 
 			<ul>
 				<li>Titulo: <br/> 
-					<input type="text" name="livro.titulo"/>
+					<input type="text" name="livro.titulo"
+					value="${livro.titulo}"/>
 				</li>
 				
 				<li>Descrição: <br/>
-					<textarea name="livro.descricao" ></textarea>
+					<textarea name="livro.descricao">${livro.descricao}</textarea>
 				</li>
 				
 				<li>ISBN: <br/>
-					<input type="text" name="livro.isbn"/>
+					<input type="text" name="livro.isbn" 
+					value="${livro.isbn}"/>
 				</li>
 				
 				<li>Preço: <br/>
-					<input type="text" name="livro.preco">
+					<input type="text" name="livro.preco"
+					value="${livro.preco}"/>
 				</li>
 				
 				<li>Data de publicacao: <br/>
-					<input type="text" name="livro.dataPublicacao"/>
+					<input type="text" name="livro.dataPublicacao"
+					value="${livro.dataPublicacao}"/>
 				</li>
 			</ul>
 			

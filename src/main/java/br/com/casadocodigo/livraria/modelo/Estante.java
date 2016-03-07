@@ -6,4 +6,6 @@ public interface Estante {
 	void guardar(Livro livro);
 	
 	List<Livro> todosOsLivros();
+
+	Livro buscaPorIsbn(String isbn);
 }

@@ -27,7 +27,10 @@ public class LivrosController {
 		Estante estante = new UmaEstanteQualquer();
 		return estante.todosOsLivros();
 	}
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/master
 	public void edita(String isbn, Result result){
 		Estante estante = new UmaEstanteQualquer();
 		Livro livroEncontrado = estante.buscaPorIsbn(isbn);
